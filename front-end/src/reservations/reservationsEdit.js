@@ -15,6 +15,7 @@ export default function Edit() {
     reservation_date: "",
     reservation_time: "",
     people: "",
+    reservation_id: "",
   };
   const { reservation_id } = useParams();
   const [reservation, setReservation] = useState({ ...initialFormState });
@@ -61,6 +62,7 @@ export default function Edit() {
           reservation_id,
           abortController.signal
         );
+        console.log(reservation);
         let date1 = reservation.reservation_date.split("-").join("");
         let year = Number(date1.substr(0, 4));
         let month = Number(date1.substr(4, 2));
@@ -74,7 +76,7 @@ export default function Edit() {
     }
     loadReservations();
     return () => abortController.abort();
-  }, []);
+  }, [reservation_id]);
 
   return (
     <>

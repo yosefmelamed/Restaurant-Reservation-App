@@ -67,7 +67,6 @@ function Dashboard({ date }) {
     event.preventDefault();
     const ids = event.target.value.split(",");
     const tableId = Number(ids[0]);
-    const reservation_id = Number(ids[1]);
     const confirmed = window.confirm(
       "Is this table ready to seat new guests? This cannot be undone."
     );
