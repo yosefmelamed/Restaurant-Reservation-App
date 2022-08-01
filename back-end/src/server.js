@@ -1,5 +1,4 @@
 const { PORT = 5001 } = process.env;
-const cors = require("cors");
 const app = require("./app");
 const knex = require("./db/connection");
 
@@ -17,7 +16,3 @@ knex.migrate
 function listener() {
   console.log(`Listening on Port ${PORT}!`);
 }
-
-router.get("/", cors(), (req, res) => {
-  res.json({ message: "Hello Heroku!" });
-});
