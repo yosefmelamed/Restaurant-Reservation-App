@@ -1,0 +1,23 @@
+
+.side-bar {
+  background-color: #393a44;
+  min-width: 200px;
+}
+
+.table td{
+  color:slategrey;
+}
+
+.date-button button{
+ size: 100px;
+}
+
+.header-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+
