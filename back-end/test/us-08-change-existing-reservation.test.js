@@ -63,7 +63,6 @@ describe("US-08 - Change an existing reservation", () => {
         .put("/reservations/1")
         .set("Accept", "application/json")
         .send({ data: reservation });
-      console.log(response.data, 123);
 
       expect(response.body.error).toBeUndefined();
       expect(response.body.data).toEqual(

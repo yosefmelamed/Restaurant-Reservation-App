@@ -66,11 +66,9 @@ export default function Edit() {
         let year = Number(date1.substr(0, 4));
         let month = Number(date1.substr(4, 2));
         let day = Number(date1.substr(6, 2));
-        console.log(year, month, day);
         if (month < 10) month = `0${month}`;
         if (day < 10) day = `0${day}`;
         let formatedDate = `${year}-${month}-${day}`;
-        console.log(formatedDate);
         reservation.reservation_date = formatedDate;
         setReservation(reservation);
       } catch (error) {
@@ -79,7 +77,7 @@ export default function Edit() {
     }
     loadReservations();
     return () => abortController.abort();
-  }, []);
+  }, [reservation_id]);
 
   return (
     <>
