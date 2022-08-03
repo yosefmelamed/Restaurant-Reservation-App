@@ -164,6 +164,7 @@ async function futureDateAndTime(req, res, next) {
   }
   next();
 }
+console.log("a");
 
 async function validStatus(req, res, next) {
   const { status } = req.body.data;
