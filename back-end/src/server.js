@@ -1,8 +1,6 @@
 const PORT = process.env.PORT || "5001";
 const app = require("./app");
 const knex = require("./db/connection");
-const favicon = require("express-favicon");
-app.use(favicon(__dirname + "/public/favicon.png"));
 
 knex.migrate
   .latest()
