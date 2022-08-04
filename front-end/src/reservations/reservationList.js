@@ -2,6 +2,7 @@ import React from "react";
 import Seats from "./reservationSeats";
 import EditButton from "./editButton";
 import Cancel from "./reservationsCancel";
+
 /*displays a list of the reservations for the Dashboard page and Search page, plus seat, edit, and cancel buttons when appropriate.
 Acccesses the reservations information from Dashboard.js*/
 export default function ReservationList({ reservations }) {
@@ -25,8 +26,8 @@ export default function ReservationList({ reservations }) {
 
   return (
     reservations.length !== 0 && (
-      <div className="reservation-list">
-        <table className="table">
+      <div className="reservation-list d-none d-sm-block">
+        <table className="table-sm md-table lg-table-xl">
           <thead className="thead">
             <tr>
               <th>Id</th>

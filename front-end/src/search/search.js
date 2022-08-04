@@ -41,7 +41,7 @@ function Search() {
   };
 
   return (
-    <div style={{ marginTop: "40px" }}>
+    <div className="container" style={{ marginTop: "40px" }}>
       <SearchForm
         changeHandler={changeHandler}
         submitHandler={submitHandler}

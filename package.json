@@ -49,6 +49,8 @@
   "author": "Thinkful, Inc.",
   "license": "UNLICENSED",
   "dependencies": {
-    "express-favicon": "^2.0.1"
+    "bootstrap": "^5.2.0",
+    "express-favicon": "^2.0.1",
+    "react-bootstrap": "^2.4.0"
   }
 }

@@ -10,6 +10,7 @@ import TableList from "../tables/tableList";
 import Clock from "./clock";
 import { resetTables } from "../utils/api";
 import "../layout/Layout.css";
+import MobileList from "../reservations/erservationList-mobile";
 /**
  * Defines the dashboard page.
  * @param date
@@ -87,47 +88,52 @@ function Dashboard({ date }) {
 
   return (
     <main>
-      <h1 style={{ textAlign: "center", marginBottom: "15px" }}>Dashboard</h1>
-      <div className="header-line">
-        <div className="d-md-flex mb-3">
-          <h5 className="mb-0">Reservations for: {dateString}</h5>
+      <div className="container">
+        <h1 class="text-center my-3">Dashboard</h1>
+        <div className="header-line">
+          <div className="d-md-flex mb-3">
+            <h5 className="mb-0">Reservations for: {dateString}</h5>
+          </div>
+          <div className="d-md-flex mb-3">
+            <h5 className="mb-0">
+              <Clock />
+            </h5>
+          </div>
         </div>
-        <div className="d-md-flex mb-3">
-          <h5 className="mb-0">
-            <Clock />
-          </h5>
+        <hr
+          style={{ width: "100%", height: "2px", background: "#393a44" }}
+        ></hr>
+
+        <ErrorAlert error={reservationsError} />
+
+        <ReservationList reservations={reservations} />
+        <MobileList reservations={reservations} />
+
+        <TableList tables={tables} resetHandler={resetHandler} />
+
+        <div class="text-center">
+          <button
+            style={{ width: "120px" }}
+            className="btn btn-secondary mr-2"
+            onClick={() => history.push(`/dashboard?date=${previous(date)}`)}
+          >
+            Previous
+          </button>
+          <button
+            style={{ width: "120px", margin: "40px" }}
+            className="btn btn-secondary mr-2"
+            onClick={() => history.push(`/dashboard?date=${today()}`)}
+          >
+            Today
+          </button>
+          <button
+            style={{ width: "120px", margin: "40px" }}
+            className="btn btn-secondary mr-2"
+            onClick={() => history.push(`/dashboard?date=${next(date)}`)}
+          >
+            Next
+          </button>
         </div>
-      </div>
-      <hr style={{ width: "100%", height: "2px", background: "#393a44" }}></hr>
-
-      <ErrorAlert error={reservationsError} />
-
-      <ReservationList reservations={reservations} />
-
-      <TableList tables={tables} resetHandler={resetHandler} />
-
-      <div style={{ textAlign: "center" }}>
-        <button
-          style={{ width: "120px" }}
-          className="btn btn-secondary mr-2"
-          onClick={() => history.push(`/dashboard?date=${previous(date)}`)}
-        >
-          Previous
-        </button>
-        <button
-          style={{ width: "120px", margin: "40px" }}
-          className="btn btn-secondary mr-2"
-          onClick={() => history.push(`/dashboard?date=${today()}`)}
-        >
-          Today
-        </button>
-        <button
-          style={{ width: "120px", margin: "40px" }}
-          className="btn btn-secondary mr-2"
-          onClick={() => history.push(`/dashboard?date=${next(date)}`)}
-        >
-          Next
-        </button>
       </div>
     </main>
   );
