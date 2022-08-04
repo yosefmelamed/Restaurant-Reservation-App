@@ -89,7 +89,7 @@ function Dashboard({ date }) {
   return (
     <main>
       <div className="container">
-        <h1 class="text-center my-3">Dashboard</h1>
+        <h1 className="text-center my-3">Dashboard</h1>
         <div className="header-line">
           <div className="d-md-flex mb-3">
             <h5 className="mb-0">Reservations for: {dateString}</h5>
@@ -111,7 +111,7 @@ function Dashboard({ date }) {
 
         <TableList tables={tables} resetHandler={resetHandler} />
 
-        <div class="text-center">
+        <div className="text-center">
           <button
             style={{ width: "120px" }}
             className="btn btn-secondary mr-2"
