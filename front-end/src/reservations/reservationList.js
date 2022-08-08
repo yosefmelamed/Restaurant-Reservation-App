@@ -26,7 +26,7 @@ export default function ReservationList({ reservations }) {
 
   return (
     reservations.length !== 0 && (
-      <div className="reservation-list d-none d-sm-block">
+      <div className="d-none d-sm-block">
         <table className="table-sm md-table lg-table-lg">
           <thead className="thead">
             <tr>

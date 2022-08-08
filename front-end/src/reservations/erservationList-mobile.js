@@ -22,7 +22,7 @@ function MobileList({ reservations }) {
   return reservations.map((reservation, index) => (
     <ul
       key={index}
-      className="container d-block justify-content-center d-sm-none"
+      className="container-fluid d-block justify-content-center d-sm-none"
       style={{ listStyle: "none" }}
     >
       <li>
