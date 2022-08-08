@@ -91,10 +91,10 @@ function Dashboard({ date }) {
       <div className="container-fluid d-flex flex-column">
         <h1 className="text-center my-3">Dashboard</h1>
         <div className="header-line">
-          <div className="d-md-flex mb-3">
+          <div className="d-md-flex  mb-3">
             <h5 className="mb-0">Reservations for: {dateString}</h5>
           </div>
-          <div className="d-md-flex mb-3">
+          <div className="d-md-flex  mb-3">
             <h5 className="mb-0">
               <Clock />
             </h5>
