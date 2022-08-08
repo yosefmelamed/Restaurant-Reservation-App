@@ -2,9 +2,9 @@ import React from "react";
 //displays the tables, tables capacity, and a finish button for freeing up a table-accesses the reset handler in Dashboard.js
 export default function TableList({ tables, resetHandler }) {
   return (
-    <>
-      <table className="table-list">
-        <thead className="thead">
+    <div className="d-flex justify content-center">
+      <table className="table table-responsive">
+        <thead className="thead ">
           <tr>
             <th>Table Name:</th>
             <th>Capacity:</th>
@@ -35,6 +35,6 @@ export default function TableList({ tables, resetHandler }) {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }

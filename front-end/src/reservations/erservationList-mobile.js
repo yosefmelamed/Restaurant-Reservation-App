@@ -19,11 +19,17 @@ function MobileList({ reservations }) {
     var newFormatTime = `${hours}:${min} ${AMPM}`;
     return newFormatTime;
   }
-  return reservations.map((reservation, i) => (
-    <ul key={i} className="table-sm d-flex justify-content-center  d-sm-none">
-      <div className="accordion" id="accordionExample">
+  return reservations.map((reservation, index) => (
+    <ul
+      key={index}
+      className="container table-sm d-flex justify-content-center d-sm-none"
+    >
+      <div
+        className="accordion d-flex-justify-content-center"
+        id="accordionExample"
+      >
         <div className="accordion-item">
-          <h2 className="accordion-header" id="headingOne">
+          <h2 className="accordion-header " id="headingOne">
             <button
               className="accordion-button btn btn-primary"
               type="button"

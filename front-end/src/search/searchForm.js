@@ -5,7 +5,10 @@ export default function SearchForm({
 }) {
   return (
     <>
-      <form id="searchForm" className="search-form d-flex align-content-center">
+      <form
+        id="searchForm"
+        className="container search-form d-flex justify-content-center align-content-center"
+      >
         <div className="form-group">
           <fieldset>
             <label htmlFor="table_name">Search by Mobile Number:</label>
