@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Final Capstone: Restaurant Reservation System
 
 Deployed App Here: https://final-caps-22-client.herokuapp.com/dashboard
