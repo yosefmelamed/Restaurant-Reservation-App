@@ -20,53 +20,64 @@ function MobileList({ reservations }) {
     return newFormatTime;
   }
   return reservations.map((reservation, index) => (
-    <ol
-      key={index}
-      className="container-fluid d-block justify-content-center d-lg-none"
-      style={{ listStyle: "none", textAlign: "center" }}
-    >
-      <h5 style={{ textAlign: "center", marginTop: "30px" }}>{index + 1}</h5>
-      <li>
-        Time:
-        {convertTo12Hour(reservation.reservation_time)}
-      </li>
+    <>
+      <ol
+        key={index}
+        className="container-fluid d-block justify-content-center d-lg-none"
+        style={{ listStyle: "none", textAlign: "center" }}
+      >
+        <li
+          style={{
+            fontSize: "18px",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginTop: "30px",
+          }}
+        >
+          {index + 1}
+        </li>
+        <li>
+          Time:
+          {convertTo12Hour(reservation.reservation_time)}
+        </li>
 
-      <li>
-        Date:
-        {reservation.reservation_date}
-      </li>
+        <li>
+          Date:
+          {reservation.reservation_date}
+        </li>
 
-      <li>
-        First-Name:
-        {reservation.first_name}
-      </li>
-      <li>
-        Last-Name:
-        {reservation.last_name}
-      </li>
-      <li>
-        Party-Size:
-        {reservation.people}
-      </li>
-      <li>
-        Mobile-Number:
-        {reservation.mobile_number}
-      </li>
-      <li data-reservation-id-status={reservation.reservation_id}>
-        Status:
-        {reservation.status}
-      </li>
-      <li>
-        {reservation.status === "booked" && (
-          <>
-            <Seats reservation_id={reservation.reservation_id} />
+        <li>
+          First-Name:
+          {reservation.first_name}
+        </li>
+        <li>
+          Last-Name:
+          {reservation.last_name}
+        </li>
+        <li>
+          Party-Size:
+          {reservation.people}
+        </li>
+        <li>
+          Mobile-Number:
+          {reservation.mobile_number}
+        </li>
+        <li data-reservation-id-status={reservation.reservation_id}>
+          Status:
+          {reservation.status}
+        </li>
+        <li>
+          {reservation.status === "booked" && (
+            <>
+              <Seats reservation_id={reservation.reservation_id} />
 
-            <EditButton reservation_id={reservation.reservation_id} />
+              <EditButton reservation_id={reservation.reservation_id} />
 
-            <Cancel reservation={reservation} />
-          </>
-        )}
-      </li>
+              <Cancel reservation={reservation} />
+            </>
+          )}
+        </li>
+      </ol>
       <hr
         style={{
           width: "100%",
@@ -75,7 +86,7 @@ function MobileList({ reservations }) {
           marginTop: "70px",
         }}
       ></hr>
-    </ol>
+    </>
   ));
 }
 
