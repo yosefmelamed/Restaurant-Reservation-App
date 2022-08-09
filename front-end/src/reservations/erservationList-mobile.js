@@ -20,11 +20,12 @@ function MobileList({ reservations }) {
     return newFormatTime;
   }
   return reservations.map((reservation, index) => (
-    <ul
+    <ol
       key={index}
       className="container-fluid d-block justify-content-center d-lg-none"
-      style={{ listStyle: "none" }}
+      style={{ listStyle: "none", textAlign: "center" }}
     >
+      <h5 style={{ textAlign: "center", marginTop: "30px" }}>{index + 1}</h5>
       <li>
         Time:
         {convertTo12Hour(reservation.reservation_time)}
@@ -66,7 +67,15 @@ function MobileList({ reservations }) {
           </>
         )}
       </li>
-    </ul>
+      <hr
+        style={{
+          width: "100%",
+          height: "2px",
+          background: "#393a44",
+          marginTop: "70px",
+        }}
+      ></hr>
+    </ol>
   ));
 }
 

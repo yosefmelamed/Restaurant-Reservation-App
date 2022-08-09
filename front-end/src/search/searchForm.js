@@ -7,7 +7,7 @@ export default function SearchForm({
     <>
       <form
         id="searchForm"
-        className="container search-form d-flex justify-content-center align-content-center"
+        className="container search-form d-flex flex-column"
       >
         <div className="form-group">
           <fieldset>
@@ -23,7 +23,9 @@ export default function SearchForm({
               onChange={changeHandler}
             ></input>
           </fieldset>
+        </div>
 
+        <div>
           <button
             className="btn btn-primary my-2"
             type="submit"

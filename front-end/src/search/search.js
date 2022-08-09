@@ -46,7 +46,7 @@ function Search() {
 
   return (
     <div
-      className="d-flex justify-content-center"
+      className="d-flex  justify-content-center text-center"
       style={{ marginTop: "40px" }}
     >
       <div>
