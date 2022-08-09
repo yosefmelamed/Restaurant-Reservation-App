@@ -19,10 +19,10 @@ function MobileList({ reservations }) {
     var newFormatTime = `${hours}:${min} ${AMPM}`;
     return newFormatTime;
   }
-  return reservations.map((reservation, index) => (
+  return reservations.map((reservation) => (
     <>
       <ol
-        key={index}
+        key={reservation.reservation_id}
         className="container-fluid d-block justify-content-center d-lg-none"
         style={{ listStyle: "none", textAlign: "center" }}
       >
@@ -34,7 +34,7 @@ function MobileList({ reservations }) {
             marginTop: "30px",
           }}
         >
-          {index + 1}
+          {reservation.reservation_id}
         </li>
         <li>
           Time:

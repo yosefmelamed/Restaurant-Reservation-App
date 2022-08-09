@@ -11,8 +11,8 @@ export default function TableList({ tables, resetHandler }) {
           </tr>
         </thead>
         <tbody>
-          {tables.map((table, index) => (
-            <tr key={index}>
+          {tables.map((table) => (
+            <tr key={table.table_id}>
               <th>{table.table_name}</th>
               <td>{table.capacity}</td>
               <td data-table-id-status={table.table_id}>
