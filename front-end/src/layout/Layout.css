@@ -29,11 +29,12 @@ li{
   margin-top: 10px;
 }
 
-
-
-
-
-
+/*.header-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}*/
 
 
 
