@@ -1,6 +1,8 @@
 import Seats from "./reservationSeats";
 import EditButton from "./editButton";
 import Cancel from "./reservationsCancel";
+
+//hanldles the design change of the reservations list for a mobile phone
 function MobileList({ reservations }) {
   function convertTo12Hour(oldFormatTime) {
     var oldFormatTimeArray = oldFormatTime.split(":");

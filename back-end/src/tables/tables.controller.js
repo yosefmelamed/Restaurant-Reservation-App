@@ -158,15 +158,15 @@ module.exports = {
   list: [asyncErrorBoundary(queryInput), asyncErrorBoundary(list)],
   read: [asyncErrorBoundary(tableExists), asyncErrorBoundary(read)],
   create: [
-    bodyDataHas("table_name"),
-    bodyDataHas("capacity"),
+    asyncErrorBoundary(bodyDataHas("table_name")),
+    asyncErrorBoundary(bodyDataHas("capacity")),
     asyncErrorBoundary(ValidName),
     asyncErrorBoundary(CapacityIsANumber),
     asyncErrorBoundary(create),
   ],
 
   update: [
-    bodyDataHas("reservation_id"),
+    asyncErrorBoundary(bodyDataHas("reservation_id")),
     asyncErrorBoundary(reservationExists),
     asyncErrorBoundary(tableExists),
     asyncErrorBoundary(reservationIsAlreadySeated),
