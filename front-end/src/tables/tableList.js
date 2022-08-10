@@ -3,7 +3,7 @@ import React from "react";
 export default function TableList({ tables, resetHandler }) {
   return (
     <div className="d-flex justify content-center">
-      <table className="table table-responsive">
+      <table className="table-sm md-table table-responsive">
         <thead className="thead ">
           <tr>
             <th>Table Name:</th>
