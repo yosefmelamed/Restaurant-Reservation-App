@@ -19,9 +19,7 @@ function Layout() {
           <Menu />
         </div>
         <div className="col d-flex justify-content-center justify-content-lg-start">
-          <div>
-            <Routes />
-          </div>
+          <Routes />
         </div>
       </div>
     </div>
