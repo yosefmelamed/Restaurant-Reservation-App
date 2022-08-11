@@ -11,6 +11,10 @@ Full-Stack App Using the following:
 - PostgreSQL
 - Knex.js
 
+
+## Functionallity:
+This restaurant App allows a user to easily create a new reservation for the restaurant, as well as allowing a restauarnt associate to manage current reservations, from accessing a list of the reservations per date, seating current reservations at available tables, and updating a reservation's information.
+
 ## API Endpoints:
 
 | URL | Request Method | Description | Page |
@@ -31,7 +35,7 @@ Dashboard:
 
 - Displays a menu to access the various pages.
 - Displays a list of reservations together with buttons for seating a reservation at a particular table, editing a reservation's information, and cancelling a reservation.
-- The default page uses the current date to query the reservations list for the current date
+- The default page uses the current date to query the reservations list for the current date.
 - Three buttons on the bottom of the page toggle the reservations listed based on current, previous, and past dates.
 - Displays a list of tables and pertinent information, such as a table's capacity, whether it is available, and which reservation may be occuping it, as well as a finish button to clear a table and indicate that it has become available.
 
@@ -40,10 +44,10 @@ Dashboard:
 
 Search:
 
-- Allows a user to search for reservations based on the phone number associated with the reservation
-- Can search based on a partial number
-- If there is no match then it displays a "no match" message
-- Contains a submit button and a cancel button which goes back to the previous page
+- Allows a user to search for reservations based on the phone number associated with the reservation.
+- Can search based on a partial number.
+- If there is no match then it displays a "no match" message.
+- Contains a submit button and a cancel button which goes back to the previous page.
 
 
 ![Search](./front-end/src/layout/pictures/us-07-search2.png)
@@ -51,9 +55,9 @@ Search:
 
 New Reservation:
 
-- Creates a new reservation
-- Contains a submit button and a cancel button which goes back to the previous page
-- Uses extensive validation to ensure the various inputs contain valid information
+- Creates a new reservation.
+- Contains a submit button and a cancel button which goes back to the previous page.
+- Uses extensive validation to ensure the various inputs contain valid information.
 
 
 ![New Reservation](./front-end/src/layout/pictures/us-02-reservation-almost-closing-before.png)
@@ -62,8 +66,8 @@ New Reservation:
 
 New Table:
 
-- Creates a new table
-- Uses validation to ensure the inputs contain valid information
+- Creates a new table.
+- Uses validation to ensure the inputs contain valid information.
 
 ![New Table](./front-end/src/layout/pictures/us-02-reservation-almost-closing-before.png)
 ![New Table](./front-end/src/layout/pictures/us-04-omit-capacity-after.png)
@@ -71,9 +75,9 @@ New Table:
 
 Seats:
 
-- Allows the user to asign a reservation to an available table from the dropdown menu
-- Contains validation to ensure that the party size does not exceed the table capacity
-- Contains a seat button and a cancel button which goes back to the previous page
+- Allows the user to asign a reservation to an available table from the dropdown menu.
+- Contains validation to ensure that the party size does not exceed the table capacity.
+- Contains a seat button and a cancel button which goes back to the previous page.
 
 ![New Table](./front-end/src/layout/pictures/us-04-seat-capacity-reservation-submit-after.png)
 ![New Table](./front-end/src/layout/pictures/us-04-seats.png)
