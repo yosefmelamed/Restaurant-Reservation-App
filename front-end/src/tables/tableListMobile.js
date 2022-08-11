@@ -8,6 +8,17 @@ export default function TablesMobileList({ tables, resetHandler }) {
         className="container-fluid d-block justify-content-center d-lg-none"
         style={{ listStyle: "none", textAlign: "center" }}
       >
+        <li
+          style={{
+            fontSize: "18px",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginTop: "30px",
+          }}
+        >
+          Table: {table.table_id}
+        </li>
+
         <li>Table Name: {table.table_name}</li>
 
         <li>Capacity: {table.capacity}</li>
