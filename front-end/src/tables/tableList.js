@@ -2,12 +2,18 @@ import React from "react";
 //displays the tables, tables capacity, and a finish button for freeing up a table-accesses the reset handler in Dashboard.js
 export default function TableList({ tables, resetHandler }) {
   return (
-    <div className="d-flex justify content-center">
-      <table className="table-sm md-table table-responsive">
+    <div className="d-none d-lg-flex justify content-center">
+      <table className="table table-responsive table-sm-sm">
         <thead className="thead ">
           <tr>
             <th>Table Name:</th>
             <th>Capacity:</th>
+            <th>Status:</th>
+            {tables.some((table) => table.reservation_id) && (
+              <>
+                <th>Occupied By:</th>
+              </>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -18,6 +24,9 @@ export default function TableList({ tables, resetHandler }) {
               <td data-table-id-status={table.table_id}>
                 {table.reservation_id ? "Occupied" : "Free"}
               </td>
+              {table.reservation_id && (
+                <td>Reservation #{table.reservation_id}</td>
+              )}
               <td>
                 {table.reservation_id && (
                   <button

@@ -11,6 +11,7 @@ import Clock from "./clock";
 import { resetTables } from "../utils/api";
 import "../layout/Layout.css";
 import MobileList from "../reservations/erservationList-mobile";
+import TablesMobileList from "../tables/tableListMobile";
 /**
  * Defines the dashboard page.
  * @param date
@@ -92,10 +93,10 @@ function Dashboard({ date }) {
         <h1 className="text-center my-3">Dashboard</h1>
         <div className="header-line">
           <div className="d-md-flex  mb-3">
-            <h5 className="mb-0">Reservations for: {dateString}</h5>
+            <h5 className="text-center mb-0">Reservations for: {dateString}</h5>
           </div>
           <div className="d-md-flex  mb-3">
-            <h5 className="mb-0">
+            <h5 className="mb-0 text-center">
               <Clock />
             </h5>
           </div>
@@ -105,12 +106,21 @@ function Dashboard({ date }) {
         ></hr>
 
         <ErrorAlert error={reservationsError} />
-
         <ReservationList reservations={reservations} />
         <MobileList reservations={reservations} />
-
         <TableList tables={tables} resetHandler={resetHandler} />
-
+        <h3
+          className="d-lg-none"
+          style={{
+            fontSize: "18px",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginTop: "30px",
+          }}
+        >
+          Tables:
+        </h3>
+        <TablesMobileList tables={tables} resetHandler={resetHandler} />
         <div className="text-center">
           <button
             style={{ width: "120px" }}

@@ -36,37 +36,18 @@ function MobileList({ reservations }) {
             marginTop: "30px",
           }}
         >
-          {reservation.reservation_id}
+          Reservation #{reservation.reservation_id}
         </li>
-        <li>
-          Time:
-          {convertTo12Hour(reservation.reservation_time)}
-        </li>
+        <li>Time: {convertTo12Hour(reservation.reservation_time)}</li>
 
-        <li>
-          Date:
-          {reservation.reservation_date}
-        </li>
+        <li>Date: {reservation.reservation_date}</li>
 
-        <li>
-          First-Name:
-          {reservation.first_name}
-        </li>
-        <li>
-          Last-Name:
-          {reservation.last_name}
-        </li>
-        <li>
-          Party-Size:
-          {reservation.people}
-        </li>
-        <li>
-          Mobile-Number:
-          {reservation.mobile_number}
-        </li>
+        <li>First-Name: {reservation.first_name}</li>
+        <li>Last-Name: {reservation.last_name}</li>
+        <li>Party-Size: {reservation.people}</li>
+        <li>Mobile-Number: {reservation.mobile_number}</li>
         <li data-reservation-id-status={reservation.reservation_id}>
-          Status:
-          {reservation.status}
+          Status: {reservation.status}
         </li>
         <li>
           {reservation.status === "booked" && (
@@ -81,6 +62,7 @@ function MobileList({ reservations }) {
         </li>
       </ol>
       <hr
+        className="d-lg-none"
         style={{
           width: "100%",
           height: "2px",
