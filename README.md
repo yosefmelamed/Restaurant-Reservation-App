@@ -1,4 +1,4 @@
-# Final Capstone: Restaurant Reservation System
+# Thinkful Final Capstone Project: Restaurant Reservation System
 
 Deployed App Here: https://final-caps-22-client.herokuapp.com/dashboard
 
@@ -12,3 +12,5 @@ PostgreSQL
 Knex.js
 
 ##API Endpoints:
+
+| URL | Request Method | Description |
