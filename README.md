@@ -81,3 +81,9 @@ Seats:
 
 ![New Table](./front-end/src/layout/pictures/us-04-seat-capacity-reservation-submit-after.png)
 ![New Table](./front-end/src/layout/pictures/us-04-seats.png)
+
+## Technology
+
+This App uses JavaScript, HTML, CSS, and BootStrap CSS for the frontend UI, React.js as the frontend framework, and React Router for the frontend routing.
+The backend of this App uses Express.js for easy routing, postgreSQL for creating and maintaining the App database, and Knex.js for querying the database.
+The backend of this App handles the API requests and employs RESTful API conventions for DRY (don't repeat yourself) code and orginization by splitting the API handlers into seperate controller, router, and service files. The controller files handle validation and web-request methods, the router files handle the backend routes and allowed requests, and the service files handle the knex.js queries. 
