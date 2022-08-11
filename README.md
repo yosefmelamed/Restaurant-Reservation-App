@@ -11,10 +11,10 @@ Express.js
 PostgreSQL
 Knex.js
 
-##API Endpoints:
+## API Endpoints:
 
 | URL | Request Method | Description | Page |
-|-----|----------------|------------------------------------------------------|
+| --- | -------------- | ---------------------------------------------------- | ----- |
 |/reservations?date=YYYY-MM-DD | GET | Accesses and displays the reservations information based on a particular date query | Dashboard |
 | /reservations?mobile_number=555-555-5555 | GET | Locates and displays all | reservations based on the associated phone number | Search |
 | /reservations | POST | Creates a new Reservation | New Reservation |
