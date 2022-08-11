@@ -40,8 +40,8 @@ Dashboard:
 
 Search:
 
-- Allows the user to search for reservations based on the phone number associated with the reservation
+- Allows a user to search for reservations based on the phone number associated with the reservation
 - Can search based on part of anumber
 - If there is no match then it displays a No match message
 
-![Search](./front-end/src/layout/pictures/us-07-search.png)
+![Search](./front-end/src/layout/pictures/us-07-search2.png)

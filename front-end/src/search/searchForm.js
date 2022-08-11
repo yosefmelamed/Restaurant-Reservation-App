@@ -1,8 +1,11 @@
+import { useHistory } from "react-router";
 export default function SearchForm({
   changeHandler,
   submitHandler,
   mobile_number,
 }) {
+  const history = useHistory();
+
   return (
     <>
       <form
@@ -32,6 +35,12 @@ export default function SearchForm({
             onClick={submitHandler}
           >
             Search By Number
+          </button>
+          <button
+            className="btn btn-secondary mr-2"
+            onClick={() => history.goBack()}
+          >
+            Cancel
           </button>
         </div>
       </form>
