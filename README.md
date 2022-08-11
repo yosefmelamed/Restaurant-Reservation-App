@@ -30,7 +30,7 @@ Full-Stack App Using the following:
 Dashboard:
 
 - Displays a menu to access the various pages.
-- Displays a list of reservations together with buttons for seating a reservation at a particular table, editing a reservations information, and cancelling a reservation.
+- Displays a list of reservations together with buttons for seating a reservation at a particular table, editing a reservation's information, and cancelling a reservation.
 - The default page uses the current date to query the reservations list for the current date
 - Three buttons on the bottom of the page toggle the reservations listed based on current, previous, and past dates.
 - Displays a list of tables and pertinent information, such as a table's capacity, whether it is available, and which reservation may be occuping it, as well as a finish button to clear a table and indicate that it has become available.
@@ -41,8 +41,8 @@ Dashboard:
 Search:
 
 - Allows a user to search for reservations based on the phone number associated with the reservation
-- Can search based on part of anumber
-- If there is no match then it displays a No match message
+- Can search based on a partial number
+- If there is no match then it displays a "no match" message
 - Contains a submit button and a cancel button which goes back to the previous page
 
 
