@@ -1,7 +1,7 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 
-//hanldles the design change of the reservations list for a mobile phone
+//hanldles the design change of the tables list for a mobile phone
 export default function TablesMobileList({ tables, resetHandler }) {
   return tables.map((table) => (
     <>
