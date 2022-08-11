@@ -3,13 +3,13 @@
 Deployed App Here: https://final-caps-22-client.herokuapp.com/dashboard
 
 Full-Stack App Using the following:
--HTML
--CSS/BootStrap
-JAVASCript/JSX
-React.js
-Express.js
-PostgreSQL
-Knex.js
+- HTML
+- CSS/BootStrap
+- JAVASCript/JSX
+- React.js
+- Express.js
+- PostgreSQL
+- Knex.js
 
 ## API Endpoints:
 
@@ -29,9 +29,11 @@ Knex.js
 
 Dashboard:
 
-Displays a menu at the top of the page to access the various pages.
-Displays a list of reservations together with buttons for seating a reservation at a particular table, editing a reservations information, and cancelling a reservation.
-Displays a list of tables and pertinent information, such as a table's capacity, whether it is available, and which reservation may be occuping it, as well as a finish button to clear a table and indicate that it has become available.
-Has three buttons on the bottom of the page to toggle the dashboard based on current, previous, and past dates. 
+- Displays a menu at the top of the page to access the various pages.
+- Displays a list of reservations together with buttons for seating a reservation at a particular table, editing a reservations information, and cancelling a reservation.
+- The default page uses the current date to query the reservations list for the current date
+- Three buttons on the bottom of the page toggle the reservations listed based on current, previous, and past dates.
+- Displays a list of tables and pertinent information, such as a table's capacity, whether it is available, and which reservation may be occuping it, as well as a finish button to clear a table and indicate that it has become available.
+ 
 
 ![dashboard](./front-end/src/layout/pictures/us-01-submit-after.png)  
