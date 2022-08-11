@@ -189,17 +189,6 @@ async function validStatus(req, res, next) {
   next();
 }
 
-async function validPhoneNumber(req, res, next) {
-  const { mobile_number } = req.body.data;
-  if (typeof mobile_number !== "number") {
-    next({
-      status: 400,
-      message: `Phone number must be a valid number.`,
-    });
-  }
-  next();
-}
-
 module.exports = {
   list: [asyncErrorBoundary(queryInput), asyncErrorBoundary(list)],
   read: [asyncErrorBoundary(reservationExists), asyncErrorBoundary(read)],
@@ -211,7 +200,6 @@ module.exports = {
     asyncErrorBoundary(bodyDataHas("reservation_time")),
     asyncErrorBoundary(bodyDataHas("people")),
     asyncErrorBoundary(peopleIsANumber),
-    asyncErrorBoundary(validPhoneNumber),
     asyncErrorBoundary(validDateAndTime),
     asyncErrorBoundary(futureDateAndTime),
     asyncErrorBoundary(create),
