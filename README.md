@@ -29,5 +29,9 @@ Knex.js
 
 Dashboard:
 
-=======
+Displays a menu at the top of the page to access the various pages.
+Displays a list of reservations together with buttons for seating a reservation at a particular table, editing a reservations information, and cancelling a reservation.
+Displays a list of tables and pertinent information, such as a table's capacity, whether it is available, and which reservation may be occuping it, as well as a finish button to clear a table and indicate that it has become available.
+Has three buttons on the bottom of the page to toggle the dashboard based on current, previous, and past dates. 
+
 ![dashboard](./front-end/src/layout/pictures/us-01-submit-after.png)  
