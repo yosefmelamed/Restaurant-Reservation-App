@@ -34,7 +34,7 @@ Dashboard:
 - The default page uses the current date to query the reservations list for the current date
 - Three buttons on the bottom of the page toggle the reservations listed based on current, previous, and past dates.
 - Displays a list of tables and pertinent information, such as a table's capacity, whether it is available, and which reservation may be occuping it, as well as a finish button to clear a table and indicate that it has become available.
- 
+
 
 ![dashboard](./front-end/src/layout/pictures/us-01-submit-after.png)  
 
@@ -45,6 +45,7 @@ Search:
 - If there is no match then it displays a No match message
 - Contains a submit button and a cancel button which goes back to the previous page
 
+
 ![Search](./front-end/src/layout/pictures/us-07-search2.png)
 
 
@@ -54,5 +55,25 @@ New Reservation:
 - Contains a submit button and a cancel button which goes back to the previous page
 - Uses extensive validation to ensure the various inputs contain valid information
 
+
 ![New Reservation](./front-end/src/layout/pictures/us-02-reservation-almost-closing-before.png)
 ![New Reservation](./front-end/src/layout/pictures/us-02-reservation-too-early-after.png)
+
+
+New Table:
+
+- Creates a new table
+- Uses validation to ensure the inputs contain valid information
+
+![New Table](./front-end/src/layout/pictures/us-02-reservation-almost-closing-before.png)
+![New Table](./front-end/src/layout/pictures/us-04-omit-capacity-after.png)
+
+
+Seats:
+
+- Allows the user to asign a reservation to an available table from the dropdown menu
+- Contains validation to ensure that the party size does not exceed the table capacity
+- Contains a seat button and a cancel button which goes back to the previous page
+
+![New Table](./front-end/src/layout/pictures/us-04-seat-capacity-reservation-submit-after.png)
+![New Table](./front-end/src/layout/pictures/us-04-seats.png)
