@@ -30,4 +30,4 @@ Knex.js
 Dashboard:
 
 =======
-![dashboard](./front-end/.screenshots/us-01-submit-before.png)  
+![dashboard](./front-end/src/layout/pictures/us-01-submit-after.png)  
