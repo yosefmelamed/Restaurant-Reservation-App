@@ -28,12 +28,6 @@ Knex.js
 ## Screen Shots
 
 Dashboard:
-<<<<<<< HEAD
-
- 
- 
- 
 
 =======
 ![dashboard](./front-end/.screenshots/us-01-submit-before.png)  
->>>>>>> parent of cd67bd1 (workingOn-ReadMe)
