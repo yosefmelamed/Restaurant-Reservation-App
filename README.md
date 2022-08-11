@@ -28,5 +28,5 @@ Knex.js
 ## Screen Shots
 
 Dashboard:
-![dashboard](.screenshots/us-01-submit-before.png) 
+![dashboard](./screenshots/us-01-submit-before.png) 
 ---  
