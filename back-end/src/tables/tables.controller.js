@@ -127,7 +127,7 @@ function bodyDataHas(propertyName) {
     }
     next({
       status: 400,
-      message: `Order must include a ${propertyName}`,
+      message: `Table must include a ${propertyName}`,
     });
   };
 }
