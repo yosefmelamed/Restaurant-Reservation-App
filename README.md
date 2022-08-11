@@ -13,4 +13,19 @@ Knex.js
 
 ##API Endpoints:
 
-| URL | Request Method | Description |
+| URL | Request Method | Description | Page |
+|-----|----------------|------------------------------------------------------|
+|/reservations?date=YYYY-MM-DD | GET | Accesses and displays the reservations information based on a particular date query | Dashboard |
+| /reservations?mobile_number=555-555-5555 | GET | Locates and displays all | reservations based on the associated phone number | Search |
+| /reservations | POST | Creates a new Reservation | New Reservation |
+| /reservations/:reservationId | GET | Accesses and displays a particular reservation based on the reservation Id | Dashboard |
+| /reservations/:reservationId/status | GET | Accesses whether a reservations status | Dashboard, Search |
+| /tables | GET | Accesses and displays the tables information | Dashboard |
+| /tables | POST | Creates a new table | New Table |
+| /tables/:tableId/seat | PUT | Seats a reservation at a table by updating the reservation id column in the tables API | Seats |
+| /tables/:tableId/seat | DELETE | Finishes a table so it can be reseated | Dashboard |
+
+## Screen Shots
+
+Dashboard:
+![dashboard](.screenshots\us-01-submit-after.png)
