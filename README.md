@@ -43,5 +43,16 @@ Search:
 - Allows a user to search for reservations based on the phone number associated with the reservation
 - Can search based on part of anumber
 - If there is no match then it displays a No match message
+- Contains a submit button and a cancel button which goes back to the previous page
 
 ![Search](./front-end/src/layout/pictures/us-07-search2.png)
+
+
+New Reservation:
+
+- Creates a new reservation
+- Contains a submit button and a cancel button which goes back to the previous page
+- Uses extensive validation to ensure the various inputs contain valid information
+
+![New Reservation](./front-end/src/layout/pictures/us-02-reservation-almost-closing-before.png)
+![New Reservation](./front-end/src/layout/pictures/us-02-reservation-too-early-after.png)
