@@ -79,7 +79,7 @@ Seats:
 - Contains validation to ensure that the party size does not exceed the table capacity.
 - Contains a seat button and a cancel button which goes back to the previous page.
 
-![New Table](./front-end/src/layout/pictures/us-04-seat-capacity-reservation-submit-after.png)
+![New Table](./front-end/src/layout/pictures/us-04-short-table-name-before.png)
 ![New Table](./front-end/src/layout/pictures/us-04-seats.png)
 
 ## Technology:
