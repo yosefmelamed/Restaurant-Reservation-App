@@ -81,28 +81,30 @@ export default function Edit() {
 
   return (
     <>
-      <ErrorAlert error={reservationError} />
-      <ReservationForm
-        reservation={reservation}
-        changeHandler={changeHandler}
-      />
+      <div>
+        <ErrorAlert error={reservationError} />
+        <ReservationForm
+          reservation={reservation}
+          changeHandler={changeHandler}
+        />
 
-      <button
-        form="reservationForm"
-        type="submit"
-        className="btn btn-primary"
-        onClick={submitHandler}
-      >
-        {" "}
-        Submit
-      </button>
+        <button
+          form="reservationForm"
+          type="submit"
+          className="btn btn-primary"
+          onClick={submitHandler}
+        >
+          {" "}
+          Submit
+        </button>
 
-      <button
-        className="btn btn-secondary mr-2"
-        onClick={() => history.goBack()}
-      >
-        Cancel
-      </button>
+        <button
+          className="btn btn-secondary mr-2"
+          onClick={() => history.goBack()}
+        >
+          Cancel
+        </button>
+      </div>
     </>
   );
 }

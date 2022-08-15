@@ -153,7 +153,6 @@ async function futureDateAndTime(req, res, next) {
   let month = now.getMonth();
   month = month + 1;
   let day = now.getUTCDate();
-  console.log(time1, time2, date1, year, month, day);
   if (month < 10) month = `0${month}`;
   if (day < 10) day = `0${day}`;
   let currentDate = Number(`${year}${month}${day}`);

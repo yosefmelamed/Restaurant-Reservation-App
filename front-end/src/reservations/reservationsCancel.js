@@ -1,9 +1,6 @@
-import { useHistory } from "react-router";
 import { updateStatus } from "../utils/api";
 //cancel button display and handler
 export default function Cancel({ reservation }) {
-  const history = useHistory();
-
   const cancelHandler = (event) => {
     event.preventDefault();
     const abortController = new AbortController();
@@ -18,7 +15,8 @@ export default function Cancel({ reservation }) {
             "cancelled",
             abortController.signal
           );
-          history.push(`/dashboard`);
+          window.location.reload();
+          console.log(reservation.reservation_date);
         } catch (error) {
           console.log(error);
         }
