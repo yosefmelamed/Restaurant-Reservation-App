@@ -6,7 +6,7 @@ import formatReservationDate from "./format-reservation-date";
 import formatReservationTime from "./format-reservation-date";
 
 const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "https://frontend-rcj3.onrender.com";
+  process.env.REACT_APP_API_BASE_URL || "https://backend2-fibm.onrender.com";
 
 /**
  * Defines the default headers for these functions to work with `json-server`
