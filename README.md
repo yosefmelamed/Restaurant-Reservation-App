@@ -1,6 +1,6 @@
 # Thinkful Capstone: Restaurant Reservation System
 
-Deployed App Here: https://frontend-rcj3.onrender.com/dashboard
+Deployed App Here: https://frontend-rcj3.onrender.com
 
 Full-Stack App Using the following:
 - HTML
