@@ -12,7 +12,6 @@ import { resetTables } from "../utils/api";
 import "../layout/Layout.css";
 import MobileList from "../reservations/erservationList-mobile";
 import TablesMobileList from "../tables/tableListMobile";
-import BackgroungPictures from "./backgroundPicture";
 /**
  * Defines the dashboard page.
  * @param date
@@ -145,7 +144,6 @@ function Dashboard({ date }) {
             Next
           </button>
         </div>
-        <BackgroungPictures />
       </div>
     </main>
   );
