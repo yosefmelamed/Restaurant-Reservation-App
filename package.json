@@ -51,6 +51,7 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "express-favicon": "^2.0.1",
+    "nodemon": "^2.0.20",
     "react-bootstrap": "^2.5.0",
     "type-fest": "^0.21.3"
   }
