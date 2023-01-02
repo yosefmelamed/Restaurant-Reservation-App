@@ -5,7 +5,7 @@ Deployed App Here: https://frontend-rcj3.onrender.com
 Full-Stack App Using the following:
 - HTML
 - CSS/BootStrap
-- JAVASCript/JSX
+- JavaScript/JSX
 - React.js
 - Express.js
 - PostgreSQL
